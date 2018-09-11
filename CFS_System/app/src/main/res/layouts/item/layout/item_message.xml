@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clicked_white_transparent"
+    android:padding="@dimen/size_15">
+
+    <RelativeLayout
+        android:id="@+id/ll_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_content"
+        app:layout_constraintTop_toTopOf="@id/tv_title">
+
+        <com.xiaoxiao.widgets.CircleImageView
+            android:id="@+id/iv_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_3"
+            android:src="@mipmap/other_message" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toRightOf="@id/ll_portrait"
+        app:layout_constraintRight_toLeftOf="@id/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/font_c5"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+</android.support.constraint.ConstraintLayout>

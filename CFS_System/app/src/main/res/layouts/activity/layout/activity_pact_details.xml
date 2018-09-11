@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.PactDetailsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_pact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_5"
+                android:background="@color/white"
+                android:descendantFocusability="afterDescendants"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/clicked_home"
+                android:gravity="center"
+                android:padding="@dimen/size_10"
+                android:text="更新进度"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_16" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.Message_Notification.View.MeetingDetailActivity">
+
+    <include
+        android:id="@+id/meet_title"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:padding="@dimen/size_12"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/tv_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meet_title">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_6_transparent"
+            android:padding="@dimen/size_12">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_c3"
+                android:textSize="@dimen/word_15" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginTop="@dimen/size_12"
+                android:background="@color/store_2"
+                app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15"
+                android:textColor="@color/font_c5"
+                app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tv_content">
+
+                <TextView
+                    android:id="@+id/tv_accessory_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/size_8"
+                    android:text="附件："
+                    android:textSize="@dimen/word_15" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_accessory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_3"
+                    android:layout_weight="1"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/size_5"
+                android:text="*请尽快确认反馈"
+                android:textColor="@color/detail1"
+                android:textSize="@dimen/word_12"
+                app:layout_constraintTop_toBottomOf="@id/ll_file" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_12"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="确认反馈"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meet_title" />
+</android.support.constraint.ConstraintLayout>

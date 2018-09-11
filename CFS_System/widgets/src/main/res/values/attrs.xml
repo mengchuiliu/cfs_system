@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <!--该属性表示里面的TAB是否均分整个PagerSlidingTabStrip控件的宽,true是,false不均分,从左到右排列,默认false-->
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectedColor" format="color" />
+        <!--缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3-->
+        <attr name="pstsScaleZoomMax" format="float" />
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean" />
+        <!-- 宽为match_parent ，指示器的宽需手动计算的问题,这个属性设置为true,则指示器的位置和字体的宽一样-->
+        <!--    <attr name="pstsIndicatorWrap" format="boolean" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="textSize" format="dimension" />
+        <attr name="loadingColor" format="color" />
+        <attr name="stopColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color"/>
+        <attr name="tl_indicator_height"/>
+        <attr name="tl_indicator_width"/>
+        <attr name="tl_indicator_margin_left"/>
+        <attr name="tl_indicator_margin_top"/>
+        <attr name="tl_indicator_margin_right"/>
+        <attr name="tl_indicator_margin_bottom"/>
+        <attr name="tl_indicator_corner_radius"/>
+        <attr name="tl_indicator_gravity"/>
+        <attr name="tl_indicator_style"/>
+        <attr name="tl_indicator_width_equal_title"/>
+
+        <!-- underline -->
+        <attr name="tl_underline_color"/>
+        <attr name="tl_underline_height"/>
+        <attr name="tl_underline_gravity"/>
+
+        <!-- divider -->
+        <attr name="tl_divider_color"/>
+        <attr name="tl_divider_width"/>
+        <attr name="tl_divider_padding"/>
+
+        <!-- tab -->
+        <attr name="tl_tab_padding"/>
+        <attr name="tl_tab_space_equal"/>
+        <attr name="tl_tab_width"/>
+
+        <!-- title -->
+        <attr name="tl_textsize"/>
+        <attr name="tl_textSelectColor"/>
+        <attr name="tl_textUnselectColor"/>
+        <attr name="tl_textBold"/>
+        <attr name="tl_textAllCaps"/>
+    </declare-styleable>
+</resources>

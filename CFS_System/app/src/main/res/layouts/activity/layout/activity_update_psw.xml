@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.forget_update_psw.UpdatePswActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/font_home">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_18" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/clicked"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size_15"
+            android:src="@mipmap/icon_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10"
+            android:text="旧密码："
+            android:textColor="@color/font_c5"
+            android:textSize="@dimen/word_16" />
+
+        <EditText
+            android:id="@+id/et_old_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 请输入旧密码"
+            android:inputType="textPassword"
+            android:textColor="@color/font_c3"
+            android:textColorHint="@color/font_c9"
+            android:textSize="@dimen/word_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10"
+            android:text="新密码："
+            android:textColor="@color/font_c5"
+            android:textSize="@dimen/word_16" />
+
+        <EditText
+            android:id="@+id/et_new_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 请输入新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/font_c3"
+            android:textColorHint="@color/font_c9"
+            android:textSize="@dimen/word_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10"
+            android:text="新密码："
+            android:textColor="@color/font_c5"
+            android:textSize="@dimen/word_16" />
+
+        <EditText
+            android:id="@+id/et_new_psw_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 请输入新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/font_c3"
+            android:textColorHint="@color/font_c9"
+            android:textSize="@dimen/word_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@drawable/bt_login_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16" />
+</LinearLayout>

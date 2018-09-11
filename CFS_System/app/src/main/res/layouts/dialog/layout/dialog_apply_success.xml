@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/returned_audit_picker_time_bg"
+    android:paddingBottom="35dp"
+    android:paddingTop="45dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/gold_success"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_25"
+        android:text="恭喜您报名成功！"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/theme_click"
+        android:paddingBottom="@dimen/size_10"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:paddingTop="@dimen/size_10"
+        android:text="  继续报名  "
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_complete"
+        app:layout_constraintTop_toBottomOf="@id/tv_success" />
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theme_click"
+        android:paddingBottom="@dimen/size_10"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:paddingTop="@dimen/size_10"
+        android:text="       完成       "
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/tv_continue"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_continue" />
+</android.support.constraint.ConstraintLayout>

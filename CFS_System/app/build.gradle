@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('./key/android_key.jks')
+            storePassword 'android'
+            v2SigningEnabled false
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.xiaoxiao.ludan"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 44
+        versionName "4.19.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a'
+//            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', "x86", "mips"
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "82851871a4438395f36aead5", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.config
+            debuggable true
+        }
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    //layout分包
+    def listSubFile = {
+        def resFolder = 'src/main/res/layouts'
+        def files = file(resFolder).listFiles()
+        def folders = []
+        files.each {
+            item -> folders.add(item.absolutePath)
+        }
+        folders.add(file(resFolder).parentFile.absolutePath)
+        return folders
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            res.srcDirs = listSubFile() //layout分包
+        }
+    }
+}
+
+repositories {
+    // ...
+    maven { url "https://jitpack.io" }
+//    mavenCentral()
+    flatDir { dirs 'libs' }
+    google()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+
+    implementation project(':httprequest')
+    implementation project(':widgets')
+    implementation project(':progresslibrary')
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+//    compile 'com.rmtheis:tess-two:6.1.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    kapt 'com.jakewharton:butterknife:7.0.1'
+    implementation 'cn.jiguang.sdk:jpush:3.0.5'
+    implementation 'cn.jiguang.sdk:jcore:1.1.2'
+    implementation 'com.yanzhenjie:permission:1.0.8'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.yinglan.keyboard:hidekeyboard:1.1.3'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    implementation 'me.kareluo.ui:popmenu:1.1.0'
+    implementation 'com.github.donkingliang:LabelsView:1.4.2'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    implementation 'com.jacktuotuo.customview:verificationcodeview:1.0.1'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation(name: 'gesturelockview-release', ext: 'aar')
+    implementation 'q.rorbin:badgeview:1.1.3'//消息显示
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation 'com.just.agentweb:agentweb:4.0.2' // (必选)web
+}

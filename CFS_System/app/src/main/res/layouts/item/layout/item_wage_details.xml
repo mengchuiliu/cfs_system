@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size_8">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/blank_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_8"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:paddingTop="@dimen/size_8">
+
+        <TextView
+            android:id="@+id/tv_loan_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_14" />
+
+        <TextView
+            android:id="@+id/tv_loan_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/font_home"
+            android:textSize="@dimen/word_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_wage_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_leng_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_c6"
+                android:textSize="@dimen/word_14" />
+
+            <TextView
+                android:id="@+id/tv_wage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5"
+                android:textColor="@color/font_c6"
+                android:textSize="@dimen/word_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_commission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/font_c6"
+            android:textSize="@dimen/word_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        android:text="备注："
+        android:textColor="@color/font_c9"
+        android:textSize="@dimen/word_13" />
+
+    <TextView
+        android:id="@+id/tv_user_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        android:text="员工异议："
+        android:textColor="@color/detail1"
+        android:textSize="@dimen/word_13"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_finance_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        android:text="财务异议："
+        android:textColor="@color/detail1"
+        android:textSize="@dimen/word_13"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rank_choose_bg"
+                android:paddingBottom="@dimen/size_3"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingRight="@dimen/size_15"
+                android:paddingTop="@dimen/size_3"
+                android:text="提成信息有误"
+                android:textColor="@color/font_home"
+                android:textSize="@dimen/word_13" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rank_choose_bg"
+                android:paddingBottom="@dimen/size_3"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingRight="@dimen/size_15"
+                android:paddingTop="@dimen/size_3"
+                android:text="提成信息确认"
+                android:textColor="@color/font_home"
+                android:textSize="@dimen/word_13" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirmedState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        android:text="提示：该放款未确认或有异议"
+        android:textColor="@color/detail1"
+        android:textSize="@dimen/word_13"
+        android:visibility="gone" />
+</LinearLayout>

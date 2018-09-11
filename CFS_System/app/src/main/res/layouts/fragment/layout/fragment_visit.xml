@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_8">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rank_choose_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_1"
+            android:paddingRight="@dimen/size_1">
+
+            <TextView
+                android:id="@+id/tv_month_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_marginTop="@dimen/size_1"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:padding="@dimen/size_3"
+                android:textColor="@color/font_c3"
+                android:textSize="@dimen/word_12" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/font_home" />
+
+            <TextView
+                android:id="@+id/tv_month_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_marginTop="@dimen/size_1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/size_3"
+                android:textColor="@color/font_c3"
+                android:textSize="@dimen/word_12" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/font_home" />
+
+            <TextView
+                android:id="@+id/tv_month_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_marginTop="@dimen/size_1"
+                android:layout_weight="1"
+                android:background="@color/font_home"
+                android:gravity="center"
+                android:padding="@dimen/size_3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_visit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_8"
+        android:background="@color/white"
+        android:overScrollMode="never" />
+</LinearLayout>

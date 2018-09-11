@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/layout_attachment_upload"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_25"
+    android:layout_marginLeft="@dimen/size_12"
+    android:layout_marginRight="@dimen/size_12"
+    android:layout_marginTop="@dimen/size_12"
+    android:background="@drawable/returned_audit_attachment_upload_bg"
+    android:gravity="center"
+    android:orientation="vertical" tools:showIn="@layout/activity_retured_audit_detial">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/returned_audit_attachment_upload_bg"
+        android:drawableLeft="@mipmap/retured_audit_upload_icon"
+        android:drawablePadding="@dimen/size_6"
+        android:gravity="center"
+        android:padding="@dimen/size_6"
+        android:text="@string/returned_audit_upload_hint"
+        android:textColor="@color/retured_audit_attachment_upload_text"
+        android:textSize="@dimen/word_14"/>
+
+</LinearLayout>

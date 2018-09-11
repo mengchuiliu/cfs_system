@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_12"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查看还款账单"
+            android:textColor="@color/font_home" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_12"
+            android:background="@drawable/message_bg"
+            android:paddingBottom="@dimen/size_3"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingRight="@dimen/size_8"
+            android:paddingTop="@dimen/size_3"
+            android:text="显示账单"
+            android:textColor="@color/font_home"
+            android:textSize="@dimen/word_13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@color/blank_bg" />
+</LinearLayout>

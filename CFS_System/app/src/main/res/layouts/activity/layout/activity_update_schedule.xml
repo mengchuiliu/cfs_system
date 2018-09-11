@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.UpdateScheduleActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:transcriptMode="normal" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/size_10"
+                android:background="@drawable/theme_click"
+                android:gravity="center"
+                android:padding="@dimen/size_10"
+                android:text="更新进度"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_16" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

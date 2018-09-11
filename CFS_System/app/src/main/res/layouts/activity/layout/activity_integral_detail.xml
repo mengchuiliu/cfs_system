@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.mortgage_score.IntegralDetailActivity">
+
+    <include
+        android:id="@+id/integral_title"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_integral_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:background="@drawable/clicked_white"
+        android:drawablePadding="@dimen/size_8"
+        android:drawableRight="@mipmap/xhharrows"
+        android:hint="请选择积分类型"
+        android:padding="@dimen/size_10"
+        android:textColor="@color/font_c5"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/integral_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_integral"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_5"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_integral_type" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nodata"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_8"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_integral_type">
+
+        <ImageView
+            android:id="@+id/iv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/nodata2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_nodata"
+            android:layout_centerHorizontal="true"
+            android:text="暂无数据" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/integral_title" />
+</android.support.constraint.ConstraintLayout>

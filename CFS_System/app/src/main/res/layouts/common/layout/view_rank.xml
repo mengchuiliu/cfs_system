@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size_20"
+    android:paddingTop="@dimen/size_15">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/img_gold" />
+
+    <TextView
+        android:id="@+id/tv_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="深圳门店1号店东莞"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-35dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_silver" />
+
+            <TextView
+                android:id="@+id/tv_second_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东莞华凯广场1店"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_13" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_copper" />
+
+            <TextView
+                android:id="@+id/tv_third_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东莞华凯广场2店"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_13" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

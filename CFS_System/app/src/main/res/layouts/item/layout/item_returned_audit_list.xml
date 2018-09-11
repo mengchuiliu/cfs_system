@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/size_15">
+
+    <!--所属客户 + 编号-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_customer"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_customer_names"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="金融" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/report_title"
+            tools:text="12391283" />
+
+    </LinearLayout>
+
+    <!--所属门店-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_shop"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="009小小信息" />
+
+    </LinearLayout>
+
+    <!--放款金额-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_amount"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_a16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="900.00元" />
+
+    </LinearLayout>
+
+    <!--回款金额-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_product"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_l3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="200000.00元" />
+
+    </LinearLayout>
+
+    <!--交易状态：-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_states"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_audit_state"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="交易成功" />
+
+    </LinearLayout>
+
+    <!--支付方式-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_pay_way"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="支付宝" />
+
+    </LinearLayout>
+
+    <!--业务员 + 入账时间-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/returned_audit_salesman"
+            android:textColor="@color/font_c5" />
+
+        <TextView
+            android:id="@+id/tv_salesman"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/font_c3"
+            tools:text="吕大川" />
+
+        <TextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_cc"
+            tools:text="2019/03/23" />
+    </LinearLayout>
+
+</LinearLayout>

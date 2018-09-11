@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.TaskDetailsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:padding="@dimen/size_12" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/size_15"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/btn_suspend"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

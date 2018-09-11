@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/returned_audit_picker_time_bg">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_15"
+        android:text="消息通知"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/size_3"
+        android:drawableRight="@mipmap/icon_right_small"
+        android:paddingRight="@dimen/size_10"
+        android:text="更多"
+        android:textColor="@color/font_c5"
+        android:textSize="@dimen/word_14"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_training_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_15"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_training_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_15"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_10"
+        android:textColor="@color/font_c5"
+        android:textSize="@dimen/word_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_training_title" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@color/line"
+        app:layout_constraintTop_toBottomOf="@id/tv_training_content" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/size_13"
+        android:text="确认已读"
+        android:textColor="@color/font_home"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/v_line_1"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+    <View
+        android:id="@+id/v_line_1"
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_1"
+        android:layout_marginRight="@dimen/size_1"
+        android:background="@color/line"
+        app:layout_constraintBottom_toBottomOf="@id/tv_confirm"
+        app:layout_constraintLeft_toRightOf="@id/tv_confirm"
+        app:layout_constraintRight_toLeftOf="@id/tv_cancel"
+        app:layout_constraintTop_toTopOf="@id/tv_confirm" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="稍后确认"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintBottom_toBottomOf="@id/tv_confirm"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/v_line_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_confirm" />
+</android.support.constraint.ConstraintLayout>

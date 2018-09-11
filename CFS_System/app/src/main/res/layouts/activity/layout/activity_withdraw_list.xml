@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.withdraw_wallet.WithdrawListActivity">
+
+    <include
+        android:id="@+id/title_withdraw"
+        layout="@layout/toolbar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_home"
+        android:paddingBottom="@dimen/size_15"
+        android:paddingTop="@dimen/size_15"
+        app:layout_constraintTop_toBottomOf="@id/title_withdraw">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="0元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_15"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/v_line" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="可提现"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_12"
+            app:layout_constraintLeft_toLeftOf="@id/tv_withdrawal_money"
+            app:layout_constraintRight_toRightOf="@id/tv_withdrawal_money"
+            app:layout_constraintTop_toBottomOf="@id/tv_withdrawal_money" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="@dimen/size_1"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/size_8"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_withdrawal"
+            app:layout_constraintLeft_toRightOf="@id/tv_withdrawal_money"
+            app:layout_constraintRight_toLeftOf="@id/tv_clearing_money"
+            app:layout_constraintTop_toTopOf="@id/tv_withdrawal_money" />
+
+        <TextView
+            android:id="@+id/tv_clearing_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="0元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_15"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/v_line"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_clearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="待清分"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_12"
+            app:layout_constraintLeft_toLeftOf="@id/tv_clearing_money"
+            app:layout_constraintRight_toRightOf="@id/tv_clearing_money"
+            app:layout_constraintTop_toBottomOf="@id/tv_clearing_money" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blank_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_8"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingRight="@dimen/size_12"
+        android:paddingTop="@dimen/size_8"
+        app:layout_constraintTop_toBottomOf="@id/cl_money">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/icon_date_2" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_withdraw"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_date" />
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_date">
+
+        <ImageView
+            android:id="@+id/iv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/nodata2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_nodata"
+            android:layout_centerHorizontal="true"
+            android:text="暂无数据" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_date" />
+
+</android.support.constraint.ConstraintLayout>

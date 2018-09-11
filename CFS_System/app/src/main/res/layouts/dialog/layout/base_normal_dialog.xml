@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/returned_audit_picker_time_bg">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/size_16"
+        android:paddingTop="32dp"
+        android:paddingRight="@dimen/size_16"
+        android:paddingBottom="32dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/font_c3"
+        android:lineSpacingExtra="12dp"
+        tools:text="这个是文本内容"/>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/font_c9"
+            android:text="@string/cancel"/>
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:background="@color/line"/>
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/font_home"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+
+
+</LinearLayout>

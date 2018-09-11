@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.PersonalInfoActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/horinzontalLiner"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/size_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="头像"
+                        android:textColor="@color/font_c3"
+                        android:textSize="@dimen/word_18" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.xiaoxiao.widgets.WaterWave
+                        android:id="@+id/water"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/iv_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/pic_head" />
+                    </com.xiaoxiao.widgets.WaterWave>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:background="@color/line" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="afterDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_person_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/fl_water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

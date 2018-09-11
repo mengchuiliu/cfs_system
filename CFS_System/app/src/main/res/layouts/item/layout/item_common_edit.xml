@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/horinzontalLiner"
+        android:gravity="center"
+        android:padding="@dimen/size_15">
+
+        <TextView
+            android:id="@+id/tv_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:textColor="@color/font_c5"
+            android:textSize="@dimen/word_15" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/font_c5"
+            android:textColorHint="@color/font_c9"
+            android:textSize="@dimen/word_15" />
+
+        <TextView
+            android:id="@+id/tv_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginLeft="@dimen/size_15"
+        android:background="@color/line" />
+</LinearLayout>

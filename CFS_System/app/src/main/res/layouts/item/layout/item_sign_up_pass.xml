@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/size_10"
+    android:paddingLeft="@dimen/size_15"
+    android:paddingTop="@dimen/size_10">
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/choose_blue"
+        android:drawablePadding="@dimen/size_15"
+        android:text="是"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_no" />
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/choose_blue"
+        android:drawablePadding="@dimen/size_15"
+        android:text="否"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/tv_ok"
+        app:layout_constraintRight_toLeftOf="@id/tv_unknown" />
+
+    <TextView
+        android:id="@+id/tv_unknown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/choose_blue"
+        android:drawablePadding="@dimen/size_15"
+        android:text="未知"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/tv_no"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

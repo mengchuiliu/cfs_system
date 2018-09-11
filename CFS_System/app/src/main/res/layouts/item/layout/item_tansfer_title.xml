@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/size_15"
+    android:paddingTop="@dimen/size_12">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/gold_logo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_8"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toRightOf="@id/iv_icon"
+        app:layout_constraintRight_toLeftOf="@id/iv_check" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_12"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/transfer_no"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginTop="@dimen/size_12"
+        android:background="@color/blank_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+</android.support.constraint.ConstraintLayout>

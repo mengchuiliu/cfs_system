@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/horinzontalLiner"
+        android:gravity="center"
+        android:padding="@dimen/size_10">
+
+        <TextView
+            android:id="@+id/tv_content_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_2"
+            android:layout_weight="1.6"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:textColor="@color/font_c6"
+            android:textSize="@dimen/word_15" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_3"
+            android:layout_marginRight="@dimen/size_3"
+            android:layout_weight="1"
+            android:background="@drawable/calculator_bg"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/size_2"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingRight="@dimen/size_8"
+            android:paddingTop="@dimen/size_2"
+            android:singleLine="true"
+            android:textColor="@color/font_c3"
+            android:textColorHint="@color/font_c9"
+            android:textSize="@dimen/word_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginLeft="@dimen/size_12"
+        android:background="@color/font_dd" />
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.report.ReportChartActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/font_home">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/clicked"
+            android:padding="@dimen/size_8"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_data_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/size_5"
+            android:drawableRight="@mipmap/sanjiao"
+            android:gravity="center"
+            android:text="签单量"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_title">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/tab_sliding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingTop="@dimen/size_10"
+                app:tl_iconVisible="false"
+                app:tl_indicator_color="@color/font_home"
+                app:tl_indicator_gravity="BOTTOM"
+                app:tl_indicator_width="45dp"
+                app:tl_indicator_width_equal_title="true"
+                app:tl_textBold="SELECT"
+                app:tl_textSelectColor="@color/font_home"
+                app:tl_textUnselectColor="@color/font_c6"
+                app:tl_textsize="@dimen/word_14" />
+
+            <RelativeLayout
+                android:id="@+id/rl_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clicked_white"
+                app:layout_constraintTop_toBottomOf="@id/tab_sliding">
+
+                <TextView
+                    android:id="@+id/tv_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_18"
+                    android:layout_toLeftOf="@+id/iv_right_icon"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_10"
+                    android:singleLine="true"
+                    android:text="深圳"
+                    android:textColor="@color/font_home"
+                    android:textSize="@dimen/word_15" />
+
+                <ImageView
+                    android:id="@+id/iv_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/size_10"
+                    android:src="@mipmap/icon_right"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/font_dd"
+                app:layout_constraintTop_toBottomOf="@id/rl_zone" />
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingTop="@dimen/size_15"
+                app:layout_constraintTop_toBottomOf="@id/line">
+
+                <LinearLayout
+                    style="@style/horizontalWeight"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chart_date_bg_normal"
+                        android:text="周报表"
+                        android:textColor="@color/font_home"
+                        android:textSize="@dimen/word_12" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/horizontalWeight">
+
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chart_date_bg_select"
+                        android:text="月报表"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/word_12" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/horizontalWeight">
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chart_date_bg_normal"
+                        android:text="年报表"
+                        android:textColor="@color/font_home"
+                        android:textSize="@dimen/word_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fl_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingLeft="@dimen/size_8"
+                android:paddingRight="@dimen/size_8"
+                app:layout_constraintTop_toBottomOf="@id/ll_date">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/font_dd"
+                app:layout_constraintTop_toBottomOf="@id/fl_rv" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="#ffffff"
+                android:clipChildren="false"
+                app:layout_constraintTop_toBottomOf="@id/line_1" />
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/icon_data"
+                android:drawablePadding="@dimen/size_5"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_18"
+                android:paddingTop="@dimen/size_8"
+                android:textSize="@dimen/word_14"
+                app:layout_constraintTop_toBottomOf="@id/lineChart" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                app:layout_constraintTop_toBottomOf="@+id/tv_data"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/blank_bg"
+                    android:layout_marginLeft="@dimen/size_18"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_data_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:layout_below="@id/line2"
+                    android:paddingLeft="@dimen/size_18" />
+            </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_title" />
+
+</android.support.constraint.ConstraintLayout>

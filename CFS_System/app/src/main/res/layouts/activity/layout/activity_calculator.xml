@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.loan_calculator.CalculatorActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/clicked_white"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size_12"
+            android:src="@mipmap/icon_back_hei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="贷款计算器"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_16" />
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/size_3"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="@dimen/size_3"
+        app:layout_constraintTop_toBottomOf="@id/rl_title"
+        app:tl_bar_color="#ffffff"
+        app:tl_divider_padding="@dimen/size_3"
+        app:tl_indicator_color="#2C97DE"
+        app:tl_indicator_corner_radius="8dp"
+        app:tl_indicator_margin_bottom="@dimen/size_3"
+        app:tl_indicator_margin_top="@dimen/size_3"
+        app:tl_textBold="SELECT"
+        app:tl_textsize="@dimen/word_14" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_calculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+</android.support.constraint.ConstraintLayout>

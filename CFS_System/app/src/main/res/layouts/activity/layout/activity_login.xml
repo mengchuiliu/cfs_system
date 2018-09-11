@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xxjr.cfs_system.main.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_common_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="CFS综合业务系统"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_6"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/login_input_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size_3"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginLeft="@dimen/size_3"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_3"
+                android:text="账号"
+                android:textColor="@color/font_c5"
+                android:textSize="@dimen/word_16" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入账号"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/font_c9"
+                android:textColorHint="@color/font_c9"
+                android:textSize="@dimen/word_16" />
+
+            <ImageView
+                android:id="@+id/iv_account_clean"
+                android:layout_width="@dimen/size_18"
+                android:layout_height="@dimen/size_18"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/clean"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_6"
+            android:layout_marginTop="@dimen/size_18"
+            android:background="@drawable/login_input_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size_3"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginLeft="@dimen/size_3"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_3"
+                android:text="密码"
+                android:textColor="@color/font_c5"
+                android:textSize="@dimen/word_16" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/font_c9"
+                android:textColorHint="@color/font_c9"
+                android:textSize="@dimen/word_16" />
+
+            <ImageView
+                android:id="@+id/iv_psw_clean"
+                android:layout_width="@dimen/size_18"
+                android:layout_height="@dimen/size_18"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/clean"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_6"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bt_login_click"
+            android:gravity="center"
+            android:padding="@dimen/size_12"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_18" />
+
+        <TextView
+            android:id="@+id/tv_forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/size_8"
+            android:background="@drawable/clicked"
+            android:text="忘记密码"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/gesture_view_login"
+        layout="@layout/gesture_login"
+        android:visibility="gone" />
+</RelativeLayout>

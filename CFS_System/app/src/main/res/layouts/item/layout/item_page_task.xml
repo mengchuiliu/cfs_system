@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_15"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_task_num"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_18"
+        android:layout_marginRight="@dimen/size_18"
+        android:background="@drawable/task_clicked"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/font_c5"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="待办任务"
+        android:textColor="@color/font_c5"
+        android:textSize="@dimen/word_12" />
+</LinearLayout>

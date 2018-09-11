@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/font_home</item>
+        <item name="colorAccent">@color/font_home</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/splash_layer_list</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="WelTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="horinzontalLiner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="horizontalWeight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="my_popwindow">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_hidden</item>
+    </style>
+</resources>

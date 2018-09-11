@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.gold_account.he_xin_chan_rong.ExchangeConfirmActivity">
+
+    <include
+        android:id="@+id/exchange_confirm_title"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_confirm_title" />
+
+    <ImageView
+        android:id="@+id/iv_hexin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white_transparent"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/size_20"
+        android:paddingRight="@dimen/size_20"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/he_xin_logo"
+        app:layout_constraintBottom_toBottomOf="@id/tv_amount"
+        app:layout_constraintTop_toTopOf="@id/tv_content" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:paddingTop="@dimen/size_20"
+        android:textSize="@dimen/word_14"
+        app:layout_constraintLeft_toRightOf="@id/iv_hexin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_confirm_title" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:paddingBottom="@dimen/size_15"
+        android:paddingTop="@dimen/size_15"
+        android:textColor="@color/font_home"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+    <ImageView
+        android:id="@+id/iv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:background="@color/white_transparent"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size_10"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/notify"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount" />
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white_transparent"
+        android:gravity="center_vertical"
+        android:text="@string/exchange_confirm_hint"
+        android:textColor="@color/font_c9"
+        android:textSize="@dimen/word_12"
+        app:layout_constraintBottom_toBottomOf="@id/iv_prompt"
+        app:layout_constraintLeft_toRightOf="@id/iv_prompt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_prompt" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:paddingBottom="@dimen/size_10"
+        android:paddingLeft="@dimen/size_20"
+        android:paddingTop="@dimen/size_5"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_18"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt" />
+
+    <FrameLayout
+        android:id="@+id/fl_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:paddingBottom="@dimen/size_20"
+        android:paddingLeft="@dimen/size_20"
+        android:paddingRight="@dimen/size_20"
+        android:paddingTop="@dimen/size_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forget_psw_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:padding="@dimen/size_8"
+                android:textColor="@color/font_c3"
+                android:textSize="@dimen/word_15" />
+
+            <TextView
+                android:id="@+id/tv_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/theme_click"
+                android:gravity="center"
+                android:padding="@dimen/size_5"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_14" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_25"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="确认兑换"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintTop_toBottomOf="@id/fl_sms" />
+</android.support.constraint.ConstraintLayout>

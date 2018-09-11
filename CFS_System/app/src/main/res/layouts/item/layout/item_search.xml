@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clicked_white"
+        android:padding="@dimen/size_15"
+        android:textColor="@color/font_c5"
+        android:textSize="@dimen/word_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/line" />
+</LinearLayout>

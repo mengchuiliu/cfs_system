@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.RatingActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingTop="@dimen/size_10"
+                android:text="对按揭员的评价："
+                android:textColor="@color/font_c3"
+                android:textSize="@dimen/word_16" />
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15"
+                app:srb_borderColor="@color/star_color"
+                app:srb_fillColor="@color/star_color"
+                app:srb_numberOfStars="5"
+                app:srb_pressedBorderColor="@color/star_color"
+                app:srb_pressedFillColor="@color/star_color"
+                app:srb_starCornerRadius="8"
+                app:srb_starSize="30dp"
+                app:srb_starsSeparation="10dp"
+                app:srb_stepSize="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/word_15"
+                android:layout_marginTop="@dimen/size_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:text="有待改善："
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_16" />
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_10"
+                    app:labelBackground="@drawable/label_bg"
+                    app:labelTextColor="@drawable/label_text_color"
+                    app:labelTextPaddingBottom="2dp"
+                    app:labelTextPaddingLeft="10dp"
+                    app:labelTextPaddingRight="10dp"
+                    app:labelTextPaddingTop="2dp"
+                    app:labelTextSize="@dimen/word_13"
+                    app:lineMargin="10dp"
+                    app:maxSelect="0"
+                    app:selectType="MULTI"
+                    app:wordMargin="10dp" />
+            </LinearLayout>
+
+            <include layout="@layout/item_common_note" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="45dp"
+                android:background="@drawable/theme_click"
+                android:gravity="center"
+                android:padding="@dimen/size_10"
+                android:text="保  存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+
+</LinearLayout>

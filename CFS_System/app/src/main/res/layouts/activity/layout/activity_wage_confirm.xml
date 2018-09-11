@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.withdraw_wallet.WageConfirmActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blank_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_6">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:drawablePadding="@dimen/size_5"
+                    android:drawableRight="@mipmap/xhharrows"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/size_5"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_13"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:layout_marginRight="@dimen/size_15"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="开始时间：2017/10/10"
+                        android:textColor="@color/font_c3"
+                        android:textSize="@dimen/word_13" />
+
+                    <TextView
+                        android:id="@+id/tv_date2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="结束时间：2010/15/15"
+                        android:textColor="@color/font_c3"
+                        android:textSize="@dimen/word_13" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/icon_date_1" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@color/white"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <refresh_recyclerview.PullToRefreshRecyclerView
+                    android:id="@+id/rv_wage_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_nodata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nodata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:src="@mipmap/nodata2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_nodata"
+                        android:layout_centerHorizontal="true"
+                        android:text="暂无数据" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_botom_over"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/blank_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_8">
+
+                <EditText
+                    android:id="@+id/et_over_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_reason_bg"
+                    android:hint="备注"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:padding="@dimen/size_8"
+                    android:textColorHint="@color/font_c9"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:background="@drawable/bt_pass_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/word_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

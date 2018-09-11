@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center"
+    android:minWidth="280dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/to_gold_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/gold_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20"
+            android:text="恭喜您注册成功!"
+            android:textColor="#D0000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            android:text="5秒后进入金账户"
+            android:textColor="@color/font_c9"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:button="@drawable/check_password"
+            android:text="  提现密码是手机号后六位"
+            android:textColor="@color/detail1"
+            android:textSize="@dimen/word_15" />
+
+        <TextView
+            android:id="@+id/tv_to_gold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="35dp"
+            android:background="@drawable/theme_click"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_8"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20"
+            android:paddingTop="@dimen/size_8"
+            android:text="进入金账户"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#A0ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="toolbar_bg">#fc6923</color>
+
+    <color name="home_line">#c8c7cc</color>
+    <color name="tab_bg">#f9f9f9</color>
+
+    <color name="font_F2">#F2F2F2</color>
+    <color name="font_c2">#222222</color>
+    <color name="font_c3">#333333</color>
+    <color name="font_c5">#555555</color>
+    <color name="font_c6">#666666</color>
+    <color name="font_c9">#999999</color>
+    <color name="font_cc">#cccccc</color>
+    <color name="font_dd">#88dddddd</color>
+    <color name="font_birth">#58000000</color>
+    <color name="font_eb">#ebebeb</color>
+    <color name="font_home">#54b1fd</color>
+    <color name="font_name">#dfb433</color>
+    <color name="report_title">#1988dd</color>
+    <color name="line">#c8c7cc</color>
+    <color name="star_color">#FA952F</color>
+
+    <color name="schedule_1">#9ed872</color>
+    <color name="schedule_2">#88d8d3</color>
+    <color name="schedule_3">#f6b37f</color>
+
+    <color name="light_gray">#99a4b7</color>
+
+    <color name="blank_bg">#f2f2f2</color>
+
+    <color name="store_2">#E5E5E5</color>
+
+    <color name="progress_1">#f98989</color>
+    <color name="progress_2">#69e5af</color>
+    <color name="progress_3">#f0cd64</color>
+    <color name="progress_4">#9ed872</color>
+    <color name="progress_5">#78c9f3</color>
+    <color name="progress_6">#8bb1f7</color>
+
+    <color name="viewfinder_frame">#00ff00</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+
+    <color name="wage_1">#7bb4fb</color>
+    <color name="wage_2">#ae7df7</color>
+    <color name="wage_3">#f3d947</color>
+    <color name="wage_4">#f9804d</color>
+    <color name="wage_5">#76cce2</color>
+
+    <color name="detail1">#ff3535</color>
+    <color name="detail2">#4ac141</color>
+    <color name="detail3">#f3a216</color>
+
+    <color name="gold_state_0">#f97475</color>
+    <color name="gold_state_1">#74c03d</color>
+    <color name="gold_state_2">#fac856</color>
+    <color name="gold_info_bg">#EEF7FF</color>
+
+    <color name="retured_audit_attachment_upload_bg">#FFF5F5F5</color>
+    <color name="retured_audit_attachment_upload_text">#FF999999</color>
+</resources>

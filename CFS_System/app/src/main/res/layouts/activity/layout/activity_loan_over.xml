@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.LoanFliterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/font_home"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/clicked"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size_5"
+            android:src="@mipmap/icon_back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_8"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_5">
+
+            <TextView
+                android:id="@+id/tv_search_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_3"
+                android:drawableEnd="@mipmap/icon_unfold"
+                android:drawableRight="@mipmap/icon_unfold"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_5"
+                android:text="客户名 "
+                android:textColor="@color/font_c6"
+                android:textSize="@dimen/word_15" />
+
+            <EditText
+                android:id="@+id/et_pact_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入搜索内容"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/font_c5"
+                android:textColorHint="@color/font_cc"
+                android:textSize="@dimen/word_15" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/clicked"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/icon_date" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xiaoxiao.widgets.SlidingTabLayout
+                android:id="@+id/tl_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/size_12"
+                android:paddingLeft="@dimen/size_3"
+                android:paddingTop="@dimen/size_12"
+                app:tl_indicator_color="@color/font_home"
+                app:tl_indicator_width_equal_title="true"
+                app:tl_tab_padding="@dimen/size_12"
+                app:tl_textSelectColor="@color/font_home"
+                app:tl_textUnselectColor="@color/font_c6"
+                app:tl_textsize="@dimen/word_15"
+                app:tl_underline_color="@color/store_2"
+                app:tl_underline_height="1dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

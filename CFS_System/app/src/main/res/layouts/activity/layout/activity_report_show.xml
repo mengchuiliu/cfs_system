@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.report.ReportShowActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clicked"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size_10"
+        android:src="@mipmap/icon_back_hei"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:textColor="@color/font_home"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintLeft_toRightOf="@id/iv_back"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_show_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_show_unit" />
+</android.support.constraint.ConstraintLayout>

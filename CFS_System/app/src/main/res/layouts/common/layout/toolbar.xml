@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/font_home"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/size_10"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/icon_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_18" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/size_5"
+        android:background="@drawable/clicked"
+        android:gravity="center"
+        android:padding="@dimen/size_5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/clicked"
+        android:paddingLeft="@dimen/size_6"
+        android:paddingRight="@dimen/size_6"
+        android:scaleType="fitCenter" />
+</android.support.v7.widget.Toolbar>

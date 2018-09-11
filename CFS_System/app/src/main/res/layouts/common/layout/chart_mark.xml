@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.kareluo.ui.PopLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pl_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_5"
+    android:background="#75333333"
+    android:padding="@dimen/size_10"
+    app:bulgeSize="5dp"
+    app:offsetSize="50dp"
+    app:radiusSize="5dp"
+    app:siteMode="left">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_2">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_10" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="@dimen/size_6"
+                android:layout_height="@dimen/size_6"
+                android:src="@mipmap/chart_1" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="@dimen/size_6"
+                android:layout_height="@dimen/size_6"
+                android:src="@mipmap/chart_2" />
+
+            <TextView
+                android:id="@+id/tvContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/size_6"
+                android:layout_height="@dimen/size_6"
+                android:src="@mipmap/chart_3" />
+
+            <TextView
+                android:id="@+id/tvContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/size_6"
+                android:layout_height="@dimen/size_6"
+                android:src="@mipmap/chart_4" />
+
+            <TextView
+                android:id="@+id/tvContent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/size_6"
+                android:layout_height="@dimen/size_6"
+                android:src="@mipmap/chart_5" />
+
+            <TextView
+                android:id="@+id/tvContent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_10" />
+        </LinearLayout>
+    </LinearLayout>
+</me.kareluo.ui.PopLayout>

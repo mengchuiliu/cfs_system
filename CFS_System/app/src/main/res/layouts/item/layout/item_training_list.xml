@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clicked_white"
+    android:padding="@dimen/size_10">
+
+    <TextView
+        android:id="@+id/tv_project_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_5"
+        android:textColor="@color/font_home"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_start_time" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_c9"
+        android:textSize="@dimen/word_13"
+        app:layout_constraintLeft_toRightOf="@id/tv_project_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_point" />
+
+    <ImageView
+        android:id="@+id/iv_point"
+        android:layout_width="@dimen/size_5"
+        android:layout_height="@dimen/size_5"
+        android:layout_marginLeft="@dimen/size_2"
+        android:layout_marginRight="@dimen/size_2"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/red_point"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_end_time_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_6"
+        android:layout_marginTop="@dimen/size_6"
+        android:gravity="center_vertical"
+        android:text="报名截止时间："
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_project_name" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintBottom_toBottomOf="@id/tv_end_time_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_end_time_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_end_time_name" />
+
+    <TextView
+        android:id="@+id/tv_teacher_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6"
+        android:text="培训讲师："
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="@id/tv_end_time_name"
+        app:layout_constraintRight_toRightOf="@id/tv_end_time_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_end_time" />
+
+    <TextView
+        android:id="@+id/tv_teacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toRightOf="@id/tv_teacher_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_teacher_title" />
+
+    <TextView
+        android:id="@+id/tv_apply_number_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6"
+        android:text="已报名人数："
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="@id/tv_end_time_name"
+        app:layout_constraintRight_toRightOf="@id/tv_end_time_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_teacher" />
+
+    <TextView
+        android:id="@+id/tv_apply_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toRightOf="@id/tv_apply_number_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_apply_number_title" />
+
+    <TextView
+        android:id="@+id/tv_training_site_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6"
+        android:text="培训讲师："
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="@id/tv_end_time_name"
+        app:layout_constraintRight_toRightOf="@id/tv_end_time_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_apply_amount" />
+
+    <TextView
+        android:id="@+id/tv_training_site"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toRightOf="@id/tv_training_site_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_training_site_title" />
+
+    <TextView
+        android:id="@+id/tv_personnel_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_6"
+        android:text="人员限定："
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toLeftOf="@id/tv_end_time_name"
+        app:layout_constraintRight_toRightOf="@id/tv_end_time_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_training_site" />
+
+    <TextView
+        android:id="@+id/tv_personnel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_6"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintLeft_toRightOf="@id/tv_personnel_title"
+        app:layout_constraintRight_toLeftOf="@id/tv_state"
+        app:layout_constraintTop_toTopOf="@id/tv_personnel_title" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintBottom_toBottomOf="@id/tv_personnel"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

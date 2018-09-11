@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_page"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_12"
+        android:paddingTop="@dimen/size_12">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/pending" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_15" />
+
+        <TextView
+            android:id="@+id/menu_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_10"
+            android:background="@drawable/message_bg"
+            android:paddingBottom="@dimen/size_2"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingRight="@dimen/size_8"
+            android:paddingTop="@dimen/size_2"
+            android:text="编辑"
+            android:textColor="@color/font_home" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_12"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/transfer_no"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d0d0"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+    <View
+        android:id="@+id/page_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d0d0" />
+</LinearLayout>

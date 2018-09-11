@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clicked_white"
+    android:padding="@dimen/size_10">
+
+    <TextView
+        android:id="@+id/tv_spend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="项目费用："
+        android:textColor="@color/font_c5" />
+
+    <TextView
+        android:id="@+id/tv_spend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_home"
+        app:layout_constraintLeft_toRightOf="@id/tv_spend_title"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_company_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:text="所属门店："
+        android:textColor="@color/font_c5"
+        app:layout_constraintTop_toBottomOf="@id/tv_spend_title" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_c3"
+        app:layout_constraintLeft_toRightOf="@id/tv_spend_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_company_title" />
+
+    <TextView
+        android:id="@+id/tv_period_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:text="缴费周期："
+        android:textColor="@color/font_c5"
+        app:layout_constraintTop_toBottomOf="@id/tv_company_title" />
+
+    <TextView
+        android:id="@+id/tv_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_c3"
+        app:layout_constraintLeft_toRightOf="@id/tv_period_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_period_title" />
+
+    <TextView
+        android:id="@+id/tv_spend_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:text="支付金额："
+        android:textColor="@color/font_c5"
+        app:layout_constraintTop_toBottomOf="@id/tv_period_title" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/detail1"
+        app:layout_constraintLeft_toRightOf="@id/tv_spend_amount"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_spend_amount" />
+
+    <TextView
+        android:id="@+id/tv_audit_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:text="审核进度："
+        android:textColor="@color/font_c5"
+        app:layout_constraintTop_toBottomOf="@id/tv_spend_amount" />
+
+    <TextView
+        android:id="@+id/tv_schedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_c3"
+        app:layout_constraintLeft_toRightOf="@id/tv_audit_schedule"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_audit_schedule" />
+
+    <TextView
+        android:id="@+id/tv_pay_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:text="交费日期："
+        android:textColor="@color/font_c5"
+        app:layout_constraintTop_toBottomOf="@id/tv_audit_schedule" />
+
+    <TextView
+        android:id="@+id/tv_pay_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_c3"
+        app:layout_constraintLeft_toRightOf="@id/tv_pay_date_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_pay_date_title" />
+</android.support.constraint.ConstraintLayout>

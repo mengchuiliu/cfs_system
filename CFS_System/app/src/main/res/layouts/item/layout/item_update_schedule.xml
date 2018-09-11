@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:maxHeight="500dp"
+            android:minHeight="30dp">
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/schedule_3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_schedule_title"
+                android:layout_width="61dp"
+                android:layout_height="60dp"
+                android:background="@drawable/schedule_bg_1"
+                android:gravity="center"
+                android:text="信用贷"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_3"
+                android:background="@color/schedule_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/tv_line_yellow"
+                android:layout_width="45dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/size_3"
+                android:layout_marginRight="@dimen/size_6"
+                android:layout_marginTop="30dp"
+                android:background="@color/schedule_3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/icon_schedule" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_10"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/tv_yellow"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/schedule_yellow_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:paddingTop="@dimen/size_15"
+                    android:text="黄单"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_schedule_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/schedule_text_bg"
+                    android:minHeight="60dp"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_8" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="500dp"
+        android:minHeight="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/schedule_3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+</RelativeLayout>

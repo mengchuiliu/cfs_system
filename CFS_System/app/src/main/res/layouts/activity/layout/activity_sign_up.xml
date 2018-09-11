@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/title_sign_up"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/title_sign_up" />
+
+    <com.xiaoxiao.widgets.IconCenterEditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_12"
+        android:background="@drawable/edit_bg"
+        android:drawableLeft="@mipmap/icon_search2"
+        android:drawablePadding="@dimen/size_5"
+        android:hint="请输入员工姓名"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:padding="@dimen/size_8"
+        android:textColor="@color/font_c3"
+        android:textColorHint="@color/font_c9"
+        android:textSize="@dimen/word_15"
+        app:layout_constraintTop_toBottomOf="@id/recycler_project" />
+
+    <refresh_recyclerview.PullToRefreshRecyclerView
+        android:id="@+id/rv_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_5"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/size_15"
+        app:layout_constraintBottom_toTopOf="@id/v_space"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_search" />
+
+    <View
+        android:id="@+id/v_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_5"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@color/blank_bg"
+        app:layout_constraintBottom_toTopOf="@id/tv_sign_up" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_sign_up" />
+</android.support.constraint.ConstraintLayout>

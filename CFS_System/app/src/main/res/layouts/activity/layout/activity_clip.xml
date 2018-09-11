@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#18B4ED">
+
+            <ImageView
+                android:id="@+id/clip_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/clicked"
+                android:contentDescription="@string/app_name"
+                android:padding="15dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="头像剪辑"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <com.xxjr.cfs_system.clipheadphoto.ClipImageLayout
+            android:id="@+id/clipImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_botom"
+            android:layout_below="@+id/title_bar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_botom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/action_clip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/clicked"
+                android:padding="10dp"
+                android:text="确 定"
+                android:textColor="#18B4ED"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

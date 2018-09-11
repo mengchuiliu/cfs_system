@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.OverApplyActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_over"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:overScrollMode="never" />
+
+            <include
+                android:id="@+id/bottom"
+                layout="@layout/bottom_bt"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_botom_over"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/font_dd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_5"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_6">
+
+                <EditText
+                    android:id="@+id/et_over_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_reason_bg"
+                    android:hint="请输入拒绝原因"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:padding="@dimen/size_8"
+                    android:textColorHint="@color/font_c9"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:background="@drawable/bt_pass_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/word_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

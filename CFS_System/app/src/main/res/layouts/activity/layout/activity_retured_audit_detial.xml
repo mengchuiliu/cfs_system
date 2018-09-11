@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--附件布局-->
+
+            <LinearLayout
+                android:id="@+id/layout_attachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--审核/拒绝布局-->
+
+    <LinearLayout
+        android:id="@+id/ll_wait_for_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_12"
+        android:paddingLeft="@dimen/size_25"
+        android:paddingRight="@dimen/size_25"
+        android:paddingTop="@dimen/size_12"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/theme_click"
+            android:gravity="center"
+            android:padding="@dimen/size_10"
+            android:text="@string/base_pass"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_16" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="42dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_not"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/theme_click"
+            android:gravity="center"
+            android:padding="@dimen/size_10"
+            android:text="@string/base_reject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_16" />
+    </LinearLayout>
+
+    <!--发起代扣-->
+
+    <TextView
+        android:id="@+id/tv_withhold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_12"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/size_12"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="@string/returned_audit_withhold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16"
+        android:visibility="gone" />
+
+</LinearLayout>

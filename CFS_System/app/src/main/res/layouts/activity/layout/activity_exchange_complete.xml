@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.gold_account.he_xin_chan_rong.ExchangeCompleteActivity">
+
+    <include
+        android:id="@+id/exchange_complete_title"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_complete_title" />
+
+    <ImageView
+        android:id="@+id/iv_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@color/white_transparent"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size_20"
+        android:src="@mipmap/exchange_complete"
+        app:layout_constraintTop_toBottomOf="@id/exchange_complete_title" />
+
+    <TextView
+        android:id="@+id/tv_complete_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:gravity="center"
+        android:text="兑换申请提交成功"
+        android:textColor="@color/black"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintTop_toBottomOf="@id/iv_complete" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="45dp"
+        android:paddingTop="35dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_complete_hint">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三李四15265552"
+            android:textSize="@dimen/word_15" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_15"
+            android:text="80.00元"
+            android:textColor="@color/font_home"
+            android:textSize="@dimen/word_15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintTop_toBottomOf="@id/ll_content" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/word_15"
+    android:paddingLeft="@dimen/size_10"
+    android:paddingRight="@dimen/size_10"
+    android:paddingTop="@dimen/size_15">
+
+    <TextView
+        android:id="@+id/tv_notify_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notify_time"
+        android:text="2018-06-08"
+        android:textColor="#FBFBFB"
+        android:textSize="@dimen/word_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/round_6_transparent"
+        android:padding="@dimen/size_10"
+        app:layout_constraintTop_toBottomOf="@id/tv_notify_time">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_15"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/red_point"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title"
+            app:layout_constraintLeft_toRightOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:textColor="@color/font_c9"
+            android:textSize="@dimen/word_13"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_click"
+            android:paddingBottom="@dimen/size_5"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:paddingTop="@dimen/size_5"
+            android:text="确认反馈"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_create_time"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginTop="@dimen/size_6"
+            android:background="@color/store_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_create_time" />
+
+        <TextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_15"
+            app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:textColor="@color/font_c5"
+            app:layout_constraintTop_toBottomOf="@id/tv_message_title" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:drawablePadding="@dimen/size_5"
+            android:drawableRight="@mipmap/icon_right_small"
+            android:text="查看详情"
+            app:layout_constraintTop_toBottomOf="@id/tv_message_content" />
+
+        <TextView
+            android:id="@+id/tv_isRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:text="*请尽快确认反馈"
+            android:textColor="@color/detail1"
+            android:textSize="@dimen/word_12"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">综合业务系统</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+    <string name="bind_account">绑定账户</string>
+    <string name="exit_login">退出登录</string>
+
+    <string name="top_up_hints"><Data><![CDATA[<font color="#EB4840">充值码转账须知：</font> <br /><br />1. 请务必使用本人的银行卡,只限借记卡往指定的富友企业户打款;
+        <br /><br />2. 请务必将充值码（为7位数字）准确完整的填入备注栏 (如: 用途, 附言, 摘要, 备注等), 如果出现可以填写多种备注信息的情况,请全部完整的填写充值码（为 7 位数字）;
+        <br /><br />3.充值码（为 7 位数字）有效期 10 天,请您及时足额充值;<br /><br />4.您可以选择的转账方式有: 柜面(不支持现金), 网银, 手机银行.]]></Data></string>
+
+    <string name="fast_hints"><Data><![CDATA[<font color="#EB4840">快捷充值须知：</font> <br /><br />金账户所绑定的储蓄卡充值为快捷充值.]]></Data></string>
+
+    <string name="login_repeat">您的账号在其它设备登录，您已被迫下线?</string>
+
+    <string name="he_xin_account_bind">      使用核新产融功能，需要先与核新产融账户进行绑定，请先绑定核新产融账户。</string>
+    <string name="exchange_hint">兑换金额将存入与金账户绑定的核新产融账户中</string>
+    <string name="exchange_confirm_hint">为保证资金安全，请验证身份后进行下一步操作。</string>
+
+    <item name="tag_first" type="id" />
+    <item name="tag_second" type="id" />
+
+    <!--回款审核-->
+    <string name="returned_audit_search_hint">请输入门店名称查询</string>
+    <string name="returned_audit_search_title_hint">搜索门店</string>
+    <!--一级菜单标签-->
+    <string name="returned_audit_tab_0">现金/转账,代扣,金账户</string>
+
+    <!--二级菜单标签-->
+    <string name="returned_audit_tab_01">待审核,审核拒绝,已入账</string>
+    <string name="returned_audit_tab_02">待审核,审核拒绝,已审核,已发起代扣,已入账</string>
+    <string name="returned_audit_tab_03">待充值,充值交易中,已入账</string>
+
+    <string name="returned_audit_customer">所属客户：</string>
+    <string name="returned_audit_shop">所属门店：</string>
+    <string name="returned_audit_amount">放款金额：</string>
+    <string name="returned_audit_states">审核状态：</string>
+    <string name="returned_audit_product">回款金额：</string>
+    <string name="returned_audit_pay_way">支付方式：</string>
+    <string name="returned_audit_salesman">业务员：</string>
+    <string name="returned_audit_withhold">发起代扣</string>
+    <string name="returned_audit_aisleType_unknown">平台类型未知</string>
+    <string name="returned_audit_upload_title">回款附件</string>
+    <string name="returned_audit_upload_hint">添加附件</string>
+    <string name="returned_audit_upload_protocol">所属协议&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="returned_audit_upload_time">上传时间&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <!--回款审核 详情-->
+    <string name="returned_audit_detail_title">回款审核详情</string>
+    <string name="returned_audit_delete_dialog_content">确定要删除此附件吗？</string>
+    <string name="returned_audit_delete_success_toast">删除成功</string>
+    <string name="returned_audit_upload_max">最多只能上传6个附件</string>
+    <!--通用字段-->
+    <string name="all_confirm">确定</string>
+    <string name="all_cancel">取消</string>
+    <string name="all_delete">删除</string>
+    <string name="all_click_to_view">点击查看</string>
+
+    <string name="base_no_data">没有相关数据</string>
+    <string name="base_no_more_data">没有更多数据</string>
+    <string name="base_pass">通过</string>
+    <string name="base_reject">拒绝</string>
+
+    <string name="base_unit_yuan">%1$.2f元</string>
+    <string name="base_returned_info">回款信息</string>
+    <string name="base_num">编号</string>
+    <string name="base_affiliating_area">所属地区</string>
+    <string name="base_affiliating_shop">所属门店</string>
+    <string name="base_salesman">业务员</string>
+    <string name="base_affiliating_custom">所属客户</string>
+    <string name="base_mortgage_officer">按揭员</string>
+    <string name="base_loan_product">贷款产品</string>
+    <string name="base_release_amount">放款金额</string>
+    <string name="base_in_or_out_type">收支类型</string>
+    <string name="base_pay_way">支付方式</string>
+    <string name="base_deal_status">交易状态</string>
+    <string name="base_returned_amount">回款金额</string>
+    <string name="base_pay_time">支付时间</string>
+    <string name="base_operator">经办人</string>
+    <string name="base_audit_status">审核状态</string>
+    <string name="base_recorded_time">入账时间</string>
+    <string name="base_collection_date">收款日期</string>
+    <string name="base_auditor">审核人</string>
+    <string name="base_auditor_info">审核信息</string>
+    <string name="base_loan_info">贷款信息</string>
+    <string name="base_auditor_date">审核日期</string>
+    <string name="base_auditor_remarks">审核备注</string>
+    <string name="base_withhold_info">代扣信息</string>
+    <string name="base_withhold_amount">代扣金额</string>
+    <string name="base_withhold_platform">代扣平台</string>
+    <string name="base_account_of_payment_name">付款户名</string>
+    <string name="base_account_of_payment">付款账号</string>
+    <string name="base_reserved_phone">预留手机</string>
+    <string name="base_withhold_protocol">代扣协议</string>
+    <string name="base_pay_date">支付日期</string>
+    <string name="base_receipt_date">收款日期</string>
+    <string name="base_gold_info">金账户信息</string>
+    <string name="base_amount">金额</string>
+    <string name="base_gold_signatory_bank">签约银行</string>
+    <string name="base_gold_account_name">户名</string>
+    <string name="base_gold_bank_account">银行卡账号</string>
+    <string name="base_gold_remark">金账户备注</string>
+    <string name="base_operate_successfully">操作成功</string>
+</resources>

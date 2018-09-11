@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="font_c3">#333333</color>
+    <color name="white">#ffffff</color>
+
+    <color name="font_home">#54b1fd</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="home_line">#f2f2f2</color>
+    <color name="blank_bg">#f2f2f2</color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/size_8"
+    android:paddingTop="@dimen/size_8">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="@dimen/word_12" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/word_12" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/word_12" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/word_12" />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/word_12" />
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/word_12" />
+</LinearLayout>

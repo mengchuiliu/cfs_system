@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Widgets</string>
+
+
+    <string name="pull_refreshing">下拉刷新</string>
+    <string name="loosen_refreshing">松开刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="loading">正在加载...</string>
+</resources>

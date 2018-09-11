@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_bg"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.gold_account.he_xin_chan_rong.BindAccountActivity">
+
+    <include
+        android:id="@+id/bind_title"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_title" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white_transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:text="姓名"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintBottom_toBottomOf="@id/et_name"
+        app:layout_constraintTop_toTopOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:background="@color/white_transparent"
+        android:gravity="right"
+        android:hint="请输入姓名"
+        android:inputType="text"
+        android:padding="@dimen/size_12"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintLeft_toRightOf="@id/tv_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bind_title" />
+
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white_transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:text="身份证"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintBottom_toBottomOf="@id/et_card"
+        app:layout_constraintTop_toTopOf="@id/et_card" />
+
+    <EditText
+        android:id="@+id/et_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:background="@color/white_transparent"
+        android:gravity="right"
+        android:hint="请输入身份证"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="@dimen/size_12"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintLeft_toRightOf="@id/tv_card"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white_transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:text="核新产融账号"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintBottom_toBottomOf="@id/et_account"
+        app:layout_constraintTop_toTopOf="@id/et_account" />
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:background="@color/white_transparent"
+        android:gravity="right"
+        android:hint="请输入核新产融账号"
+        android:inputType="text"
+        android:padding="@dimen/size_12"
+        android:textSize="@dimen/word_16"
+        app:layout_constraintLeft_toRightOf="@id/tv_account"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_card" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_15"
+        android:paddingRight="@dimen/size_12"
+        android:paddingTop="@dimen/size_15"
+        android:text="去注册"
+        android:textColor="@color/font_home"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_account" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有核新产融账号，"
+        app:layout_constraintBottom_toBottomOf="@id/tv_register"
+        app:layout_constraintRight_toLeftOf="@id/tv_register"
+        app:layout_constraintTop_toTopOf="@id/tv_register" />
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_15"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="确认绑定"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_register" />
+</android.support.constraint.ConstraintLayout>

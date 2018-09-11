@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaoxiao.widgets.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:id="@+id/ll_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15"
+                android:paddingTop="@dimen/size_10">
+
+                <TextView
+                    android:id="@+id/tv_cost_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成本类型："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_nub"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1000"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发生日期："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_cost_data"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1000"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_remark"
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成本备注："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1000"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 录 入 者 ："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/font_c9"
+                    android:textSize="@dimen/word_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_audit_people"
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="门店审核人："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/font_c9"
+                    android:textSize="@dimen/word_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_audit_people_manager"
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="按揭经理审核人："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_manager_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/font_c9"
+                    android:textSize="@dimen/word_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_audit_accounter"
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会计审核人："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_accounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_accounter_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/font_c9"
+                    android:textSize="@dimen/word_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cost_paid"
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否已付款："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_paid_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/font_c9"
+                    android:textSize="@dimen/word_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_audit_note"
+                style="@style/horinzontalLiner"
+                android:paddingBottom="@dimen/size_8"
+                android:paddingLeft="@dimen/size_15"
+                android:paddingStart="@dimen/size_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核备注："
+                    android:textColor="@color/font_c6"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_audit_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/font_c3"
+                    android:textSize="@dimen/word_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginStart="@dimen/size_12"
+            android:background="#c8c7cc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#cc0000"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word_18" />
+</com.xiaoxiao.widgets.SwipeMenuLayout>

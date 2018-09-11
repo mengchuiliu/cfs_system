@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.gesture_lock.LockSetActivity">
+
+    <include
+        android:id="@+id/lock_title"
+        layout="@layout/toolbar" />
+
+    <!--设置手势解锁时提示view-->
+    <com.zyyoona7.lock.GestureLockDisplayView
+        android:id="@+id/display_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lock_title" />
+
+    <TextView
+        android:id="@+id/tv_setting_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_15"
+        android:text="绘制解锁图案"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_view" />
+
+    <!--手势解锁view-->
+    <com.zyyoona7.lock.GestureLockLayout
+        android:id="@+id/gesture_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_setting_hint" />
+
+    <FrameLayout
+        android:id="@+id/water"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lock_title"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1" />
+</android.support.constraint.ConstraintLayout>

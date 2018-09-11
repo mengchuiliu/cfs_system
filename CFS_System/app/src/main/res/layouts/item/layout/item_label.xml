@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/size_12"
+    android:layout_marginRight="@dimen/size_12"
+    android:layout_marginTop="@dimen/size_15">
+
+    <TextView
+        android:id="@+id/tv_customer_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/label_report_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@drawable/label_report_text_color"
+        android:textSize="@dimen/word_15" />
+</android.support.constraint.ConstraintLayout>

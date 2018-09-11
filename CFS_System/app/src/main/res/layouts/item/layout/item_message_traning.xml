@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_10">
+
+    <TextView
+        android:id="@+id/tv_notify_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notify_time"
+        android:text="2018-06-08"
+        android:textColor="#FBFBFB"
+        android:textSize="@dimen/word_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/round_6_transparent"
+        android:padding="@dimen/size_10"
+        app:layout_constraintTop_toBottomOf="@id/tv_notify_time">
+
+        <TextView
+            android:id="@+id/tv_training_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_5"
+            android:text="新的培训提醒"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_read" />
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:text="2018-07-16"
+            android:textColor="@color/font_c9"
+            android:textSize="@dimen/word_13"
+            app:layout_constraintTop_toBottomOf="@id/tv_training_title" />
+
+        <TextView
+            android:id="@+id/tv_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/theme_click"
+            android:paddingBottom="@dimen/size_5"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:paddingTop="@dimen/size_5"
+            android:text="确认已读"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_create_time"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_training_title" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginTop="@dimen/size_6"
+            android:background="@color/store_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_create_time" />
+
+        <TextView
+            android:id="@+id/tv_training_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="培训名称："
+            android:textColor="@color/font_c3"
+            app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+        <TextView
+            android:id="@+id/tv_training_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2018年7月培训"
+            android:textColor="@color/font_c3"
+            app:layout_constraintLeft_toRightOf="@id/tv_training_name_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_training_name_title" />
+
+        <TextView
+            android:id="@+id/tv_training_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:text="培训时间："
+            android:textColor="@color/font_c5"
+            app:layout_constraintTop_toBottomOf="@id/tv_training_name" />
+
+        <TextView
+            android:id="@+id/tv_training_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2018/05/05"
+            android:textColor="@color/font_c5"
+            app:layout_constraintLeft_toRightOf="@id/tv_training_time_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_training_time_title" />
+
+        <TextView
+            android:id="@+id/tv_training_Limit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:text="人员限定："
+            android:textColor="@color/font_c5"
+            app:layout_constraintTop_toBottomOf="@id/tv_training_time" />
+
+        <TextView
+            android:id="@+id/tv_training_Limit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2018年7月培训"
+            android:textColor="@color/font_c5"
+            app:layout_constraintLeft_toRightOf="@id/tv_training_Limit_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_training_Limit_title" />
+
+        <TextView
+            android:id="@+id/tv_training_deadline_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:text="报名截止时间："
+            android:textColor="@color/detail1"
+            app:layout_constraintTop_toBottomOf="@id/tv_training_Limit" />
+
+        <TextView
+            android:id="@+id/tv_training_deadline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2018/07/17"
+            android:textColor="@color/detail1"
+            app:layout_constraintLeft_toRightOf="@id/tv_training_deadline_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_training_deadline_title" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            android:drawablePadding="@dimen/size_5"
+            android:drawableRight="@mipmap/icon_right_small"
+            android:text="查看详情"
+            app:layout_constraintTop_toBottomOf="@id/tv_training_deadline" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

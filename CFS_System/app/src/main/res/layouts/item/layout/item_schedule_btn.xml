@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_closed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size_15"
+        android:src="@mipmap/icon_close_1" />
+
+    <TextView
+        android:id="@+id/tv_confirm_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_closed"
+        android:gravity="center"
+        android:padding="@dimen/size_5"
+        android:text="请确认所有成本已录入完成,\n进度提交后将无法在录入成本!"
+        android:textColor="@color/font_home"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_above="@id/iv_closed"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/iv_closed"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_schedule_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/iv_closed"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/size_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_customer_cancel"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/schedule_click_8"
+            android:gravity="center"
+            android:text="客户\n取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_16" />
+
+        <TextView
+            android:id="@+id/tv_refuse"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:background="@drawable/schedule_click_9"
+            android:gravity="center"
+            android:text="批复\n拒绝"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_16" />
+    </LinearLayout>
+</RelativeLayout>

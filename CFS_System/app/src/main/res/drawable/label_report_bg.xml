@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 标签选中时的背景 -->
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="@dimen/size_6" />
+            <solid android:color="@color/font_home" />
+            <padding android:bottom="@dimen/size_10" android:left="@dimen/size_5" android:right="@dimen/size_5" android:top="@dimen/size_10" />
+        </shape>
+    </item>
+    <!-- 标签的正常背景 -->
+    <item android:state_selected="false">
+        <shape>
+            <corners android:radius="@dimen/size_6" />
+            <solid android:color="@color/blank_bg" />
+            <padding android:bottom="@dimen/size_10" android:left="@dimen/size_5" android:right="@dimen/size_5" android:top="@dimen/size_10" />
+        </shape>
+    </item>
+</selector>

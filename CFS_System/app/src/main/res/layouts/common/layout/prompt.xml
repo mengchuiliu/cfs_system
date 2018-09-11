@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/prompt_bg" />
+
+    <TextView
+        android:id="@+id/tv_upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_closed"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="130dp"
+        android:text="升级提醒："
+        android:textColor="@color/font_c3"
+        android:textSize="@dimen/word_15" />
+
+    <TextView
+        android:id="@+id/tv_upgrade_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_no_prompt"
+        android:layout_alignLeft="@id/tv_upgrade"
+        android:layout_alignRight="@id/iv_bg"
+        android:layout_below="@id/tv_upgrade"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_12"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_13" />
+
+    <CheckBox
+        android:id="@+id/tv_no_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_know"
+        android:layout_alignLeft="@id/tv_upgrade"
+        android:layout_alignRight="@id/iv_bg"
+        android:layout_marginTop="@dimen/size_15"
+        android:button="@drawable/check_password"
+        android:checked="true"
+        android:text="  下次登录不在提醒"
+        android:textColor="@color/font_c6"
+        android:textSize="@dimen/word_14" />
+
+    <TextView
+        android:id="@+id/tv_know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_bg"
+        android:layout_alignRight="@id/iv_bg"
+        android:layout_margin="@dimen/size_15"
+        android:background="@drawable/theme_click"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size_8"
+        android:paddingTop="@dimen/size_8"
+        android:text="我知道了"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

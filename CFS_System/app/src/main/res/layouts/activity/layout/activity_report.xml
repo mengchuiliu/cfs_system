@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xxjr.cfs_system.LuDan.view.activitys.report.ReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_gradient">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size_15"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="经营报表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_18" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_company_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.xiaoxiao.widgets.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:paddingBottom="@dimen/size_8"
+        android:paddingLeft="@dimen/size_5"
+        android:paddingTop="@dimen/size_8"
+        app:tl_indicator_color="@color/white"
+        app:tl_indicator_height="@dimen/size_1"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_tab_padding="@dimen/size_13"
+        app:tl_textSelectColor="@color/white"
+        app:tl_textUnselectColor="@color/report_title"
+        app:tl_textsize="@dimen/word_14" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_contrast_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_show_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/item_rank_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_20"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_contrast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_home"
+                    android:textSize="@dimen/word_15" />
+
+                <TextView
+                    android:id="@+id/tv_any"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/label_bg"
+                    android:paddingLeft="@dimen/size_12"
+                    android:paddingRight="@dimen/size_12"
+                    android:text="横屏" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="@dimen/size_15"
+                android:text="(单位/万)"
+                android:textSize="@dimen/word_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_5"
+                android:orientation="vertical">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </RelativeLayout>
+</LinearLayout>

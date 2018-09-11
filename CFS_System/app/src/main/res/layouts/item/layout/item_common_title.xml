@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        style="@style/horinzontalLiner"
+        android:gravity="center"
+        android:padding="@dimen/size_12">
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/icon_compact" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginStart="@dimen/size_12"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/font_c3"
+            android:textSize="@dimen/word_16" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_5"
+            android:background="@drawable/clicked"
+            android:padding="@dimen/size_5"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_12"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/line" />
+</LinearLayout>
